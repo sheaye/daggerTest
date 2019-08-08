@@ -1,13 +1,15 @@
 package com.example.test;
 
 import javax.inject.Inject;
+import javax.inject.Singleton;
 
-class ElectricHeater {
+// 5. 添加@Singleton标注，并不会影响ElectricHeater2_Factory的结构
+@Singleton
+class ElectricHeater2 {
     boolean heating;
 
-    // 2. 生成一个生产ElectricHeater实例的工厂类单例ElectricHeater_Factory
     @Inject
-    public ElectricHeater() {
+    public ElectricHeater2() {
     }
 
     public void on() {
