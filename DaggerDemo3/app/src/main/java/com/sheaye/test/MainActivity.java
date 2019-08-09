@@ -26,7 +26,11 @@ public class MainActivity extends AppCompatActivity {
 //                DripCoffeeModule_ProvidePumpFactory.providePump(module,
 //                        module.providePump(
 //                                new Thermosiphon(DripCoffeeModule_ProvideHeaterFactory.provideHeater(module)))));
-//        Log.e(tag, mHeater.toString());
-//        Log.e(tag, mPump.toString());
+        DaggerCoffeeShop.builder()
+                .dripCoffeeModule(new DripCoffeeModule())
+                .build()
+                .inject(this);
+        Log.e(tag, mHeater.toString());
+        Log.e(tag, mPump.toString());
     }
 }
