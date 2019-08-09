@@ -11,4 +11,9 @@ class DripCoffeeModule {
         return new ElectricHeater();
     }
 
+    @Provides
+    Pump providePump(Thermosiphon thermosiphon) {
+        return thermosiphon;
+    }
+
 }
