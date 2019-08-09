@@ -1,9 +1,9 @@
 package com.sheaye.test;
 
-class ElectricHeater implements Heater {
+class ElectricHeater1 implements Heater {
   boolean heating;
 
-  public ElectricHeater() {
+  public ElectricHeater1() {
   }
 
   @Override public void on() {

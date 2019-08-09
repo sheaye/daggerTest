@@ -7,6 +7,6 @@ import dagger.Provides;
 class DripCoffeeModule {
     @Provides
     Heater provideHeater() {
-        return new ElectricHeater();
+        return new ElectricHeater1();
     }
 }
