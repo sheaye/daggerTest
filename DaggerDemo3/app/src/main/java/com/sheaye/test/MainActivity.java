@@ -10,6 +10,9 @@ public class MainActivity extends AppCompatActivity {
     @Inject
     Pump mPump;
 
+    @Inject
+    Heater mHeater;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
